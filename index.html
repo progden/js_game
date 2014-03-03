@@ -14,7 +14,7 @@
 			{{for board}}
 			<span class="chessRow">
 				{{for ~root.board[#index] ~outerIdx=#index}}
-					<span class="chessPlace {{:(~outerIdx + #index)%2?'chessBlack':'chessWhite'}}">
+					<span class="chessPlace chessWhite}}">
 						{{if ~root.board[~outerIdx][#index] == 1}}
 							<div class="chessBlackCircle"></div>
 						{{else ~root.board[~outerIdx][#index] == 2}}
@@ -68,7 +68,7 @@
 			background-color: white;
 		}
 		.chessBlack {
-			background-color: white;s
+			background-color: black;
 		}
 		.chessWhiteCircle {
 		    width: 36px;
